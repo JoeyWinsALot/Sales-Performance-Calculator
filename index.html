@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Calculator</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Advanced Sales Performance Calculator</h1>
+    <section id="input-section">
+        <h2>Sales Metrics Input</h2>
+        <div class="input-field">
+            <label for="newLeads">New Leads:</label>
+            <input type="number" id="newLeads" placeholder="Enter number of new leads">
+            <small>Number of new potential customers acquired.</small>
+        </div>
+        <div class="input-field">
+            <label for="engagedLeads">Engaged Leads:</label>
+            <input type="number" id="engagedLeads" placeholder="Enter number of engaged leads">
+            <small>Number of leads that showed interest.</small>
+        </div>
+        <div class="input-field">
+            <label for="qualifiedLeads">Qualified Leads:</label>
+            <input type="number" id="qualifiedLeads" placeholder="Enter number of qualified leads">
+            <small>Number of leads that meet the criteria.</small>
+        </div>
+        <div class="input-field">
+            <label for="appointmentsBooked">Appointments Booked:</label>
+            <input type="number" id="appointmentsBooked" placeholder="Enter number of appointments booked">
+            <small>Number of appointments scheduled.</small>
+        </div>
+        <div class="input-field">
+            <label for="appointmentsShowed">Appointments Showed:</label>
+            <input type="number" id="appointmentsShowed" placeholder="Enter number of appointments showed">
+            <small>Number of appointments attended.</small>
+        </div>
+        <div class="input-field">
+            <label for="newSales">New Sales:</label>
+            <input type="number" id="newSales" placeholder="Enter number of new sales">
+            <small>Number of new sales made.</small>
+        </div>
+        <div class="input-field">
+            <label for="salesFromReferrals">Sales from Referrals:</label>
+            <input type="number" id="salesFromReferrals" placeholder="Enter number of sales from referrals">
+            <small>Number of sales from referrals.</small>
+        </div>
+        <div class="input-field">
+            <label for="churnRate">Churn/Refund Rate (%):</label>
+            <input type="number" id="churnRate" placeholder="Enter churn/refund rate">
+            <small>Percentage of customers who churn or request refunds.</small>
+        </div>
+        <div class="input-field">
+            <label for="salesMarketingCosts">Sales & Marketing Costs:</label>
+            <input type="number" id="salesMarketingCosts" placeholder="Enter sales & marketing costs">
+            <small>Total costs for sales and marketing.</small>
+        </div>
+        <div class="input-field">
+            <label for="productOperationalCosts">Product & Operational Costs:</label>
+            <input type="number" id="productOperationalCosts" placeholder="Enter product & operational costs">
+            <small>Total costs for product and operations.</small>
+        </div>
+        <button type="button" onclick="calculateMetrics()">Calculate</button>
+        <button type="button" onclick="resetFields()">Reset</button>
+    </section>
+
+    <section id="results-section">
+        <h2>Results</h2>
+        <p>Net Profit: <span id="netProfit">$0.00</span></p>
+        <p>Gross Profit per Customer: <span id="grossProfit">$0.00</span></p>
+        <p>Average Cost Per Acquisition (CAC): <span id="cac">$0.00</span></p>
+        <p>Refund Rate Impact: <span id="refundImpact">$0.00</span></p>
+        <p>Churn Costs: <span id="churnCosts">$0.00</span></p>
+    </section>
+
+    <section id="explanation-section">
+        <h3>Explanation</h3>
+        <p><strong>New Leads:</strong> Number of leads generated through marketing campaigns.</p>
+        <p><strong>Engaged Leads:</strong> Number of leads that showed interest.</p>
+        <p><strong>Qualified Leads:</strong> Number of leads that meet the criteria.</p>
+        <p><strong>Appointments Booked:</strong> Number of appointments scheduled.</p>
+        <p><strong>Appointments Showed:</strong> Number of appointments attended.</p>
+        <p><strong>New Sales:</strong> Number of new sales made.</p>
+        <p><strong>Sales from Referrals:</strong> Number of sales from referrals.</p>
+        <p><strong>Churn/Refund Rate (%):</strong> Percentage of customers who churn or request refunds.</p>
+        <p><strong>Sales & Marketing Costs:</strong> Total costs for sales and marketing.</p>
+        <p><strong>Product & Operational Costs:</strong> Total costs for product and operations.</p>
+    </section>
+</body>
+</html>
